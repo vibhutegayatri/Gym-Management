@@ -1,0 +1,20 @@
+.no-arrow .dropdown-toggle::after {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
