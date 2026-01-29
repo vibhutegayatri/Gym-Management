@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import Admin from "./models/admin.js"; // path verify कर (adminModel.js असेल तर तसा दे)
-
+import Admin from "./models/admin.js"; 
 dotenv.config();
 
 const run = async () => {
