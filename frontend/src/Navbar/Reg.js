@@ -69,7 +69,7 @@ function Reg({ onClose, onOpenLogin, onSuccess }) {
       localStorage.clear();
       sessionStorage.clear();
 
-      const res = await axios.post("http://localhost:5000/api/users/register", formData);
+      const res = await axios.post("https://gymmanagment-75up.onrender.com/api/users/register", formData);
       console.log("✅ Registration Success:", res.data);
 
       setSuccessMsg("🎉 Registration Successful!");
