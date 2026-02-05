@@ -177,7 +177,7 @@ export default function Checkout() {
     setShowQR(true);
 
     try {
-      await axios.post("http://localhost:5000/api/orders", {
+      await axios.post("https://gymmanagment-75up.onrender.com/api/users/orders", {
         name: form.name,
         email: form.email,
         product: form.product,

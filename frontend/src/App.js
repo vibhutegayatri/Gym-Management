@@ -60,9 +60,7 @@ function App() {
           {/* ✅ Payment page */}
           <Route path="/payment" element={<Payment />} />
 
-          {/* ✅ Admin routes */}
-          <Route path="/admin-login" element={<AdminLogin />} />
-          <Route path="/admin-panel" element={<AdminPanel />} />
+          
 
           {/* Optional future routes */}
           {/* <Route path="/profile" element={<Profile />} /> */}
