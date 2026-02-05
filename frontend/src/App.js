@@ -40,8 +40,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./Navbar/Index";
 import MainSite from "./Navbar/MainSite";
 import Payment from "./Payment";
-import AdminLogin from "./Navbar/admin/AdminLogin";   // ✅ Add this
-import AdminPanel from "./Navbar/admin/AdminPanel";   // ✅ Add this
 
 import "./App.css";
 import MainPage from "./Navbar/MainPage";

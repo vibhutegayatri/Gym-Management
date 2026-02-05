@@ -151,7 +151,7 @@ export default function WorkoutPlans() {
   const handleConfirmNo = () => { setShowAlreadyPopup(false); setPendingWorkout(null); };
 
   return (
-    <div style={{ width: "100%", backgroundColor: "#f3f4f6", padding: "90px 0" }}>
+    <div  style={{ width: "100%", backgroundColor: "#f3f4f6", padding: "90px 0" }} id='work'>
       <Container>
         <Typography variant="h3" align="center" gutterBottom sx={{ fontWeight: "bold", color: "#0d47a1", marginBottom: "50px" }}>Workout Plans</Typography>
         <div style={{ display: "flex", justifyContent: "center" }}>

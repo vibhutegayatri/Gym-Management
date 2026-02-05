@@ -25,7 +25,7 @@ function Header() {
       const parsedUser = JSON.parse(storedUser);
       setUserData(parsedUser);
 
-      axios.get(`http://localhost:5000/api/orders/${parsedUser.email}`)
+      axios.get(`https://gymmanagment-75up.onrender.com/api/orders/${parsedUser.email}`)
         .then(res => setMyPlans(res.data))
         .catch(err => console.error("Error fetching plans:", err));
     }
@@ -79,9 +79,9 @@ function Header() {
           <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-between">
             <Nav className="mx-auto d-flex align-items-center gap-3 justify-content-center">
               <Nav.Link href="#home" style={navLinkStyle} onClick={() => setExpanded(false)}>Home</Nav.Link>
-              <Nav.Link href="#about" style={navLinkStyle} onClick={() => setExpanded(false)}>About</Nav.Link>
               <Nav.Link href="#work" style={navLinkStyle} onClick={() => setExpanded(false)}>Workout Plans</Nav.Link>
               <Nav.Link href="#trainers" style={navLinkStyle} onClick={() => setExpanded(false)}>Trainers</Nav.Link>
+               <Nav.Link href="#about" style={navLinkStyle} onClick={() => setExpanded(false)}>About</Nav.Link>
               <Nav.Link href="#contact" style={navLinkStyle} onClick={() => setExpanded(false)}>Contact Us</Nav.Link>
             </Nav>
 
